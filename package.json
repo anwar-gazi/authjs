@@ -1,0 +1,38 @@
+{
+  "name": "auth-server-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec ts-node index.ts",
+    "build": "webpack",
+    "start": "node dist/bundle.js",
+    "test": "vitest run --globals --environment node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cors": "^10.1.0",
+    "dotenv": "^17.3.1",
+    "fastify": "^5.7.4",
+    "pg": "^8.18.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "@types/pg": "^8.16.0",
+    "@types/supertest": "^6.0.3",
+    "@vitest/coverage-v8": "^4.0.18",
+    "nodemon": "^3.1.14",
+    "prisma": "^7.4.1",
+    "supertest": "^7.2.2",
+    "ts-loader": "^9.5.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18",
+    "webpack": "^5.105.2",
+    "webpack-cli": "^6.0.1",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
